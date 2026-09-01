@@ -45,6 +45,25 @@ map("n", "<F3>", git_rebase_interactive, { noremap = true, desc = "git rebase -i
 map("n", "<F4>", git_fugitive_gvdiffsplit, { noremap = true, desc = "git resolve merge conflicts" })
 
 -- ------------------------------------------------------------------------------------------
+-- PLACEHOLDER ACTIONS
+-- ------------------------------------------------------------------------------------------
+map("n", "<F5>", function()
+  notify("<F5> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "git push -u origin <branch>" })
+
+map("n", "<F6>", function()
+  notify("<F6> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "git push -u origin <branch>" })
+
+map("n", "<F7>", function()
+  notify("<F7> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "git push -u origin <branch>" })
+
+map("n", "<F8>", function()
+  notify("<F8> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "git push -u origin <branch>" })
+
+-- ------------------------------------------------------------------------------------------
 -- POPUP SELECTION
 -- ------------------------------------------------------------------------------------------
 map("i", "<Tab>", 'pumvisible() ? "<C-n>" : "<Tab>"', { expr = true })
