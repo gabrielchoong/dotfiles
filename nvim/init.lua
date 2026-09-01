@@ -21,6 +21,7 @@ vim.opt.undofile = true
 vim.opt.pumborder = "rounded"
 vim.opt.pummaxwidth = 40
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
+vim.opt.termguicolors = true
 vim.opt.mouse = ""
 
 vim.cmd("packadd! nohlsearch")
@@ -35,6 +36,7 @@ vim.pack.add({
   "https://github.com/nvim-mini/mini.icons",
   "https://github.com/nvim-mini/mini.snippets",
   "https://github.com/neovim/nvim-lspconfig",
+  "https://github.com/rcarriga/nvim-notify",
   "https://github.com/nvim-treesitter/nvim-treesitter",
   "https://github.com/nvim-tree/nvim-web-devicons",
   "https://github.com/stevearc/oil.nvim",
