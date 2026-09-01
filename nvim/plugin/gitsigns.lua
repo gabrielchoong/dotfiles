@@ -1,7 +1,7 @@
 require("gitsigns").setup({
   signs = {
     add = { text = "+" },
-    change = { text = "x" },
+    change = { text = "c" },
     delete = { text = "-" },
     untracked = { text = "?" },
   },
