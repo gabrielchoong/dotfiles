@@ -47,5 +47,6 @@ vim.pack.add({
 
 require("keymaps")
 require("config.options")
+require("config.autocmd")
 
 vim.cmd([[colorscheme gruvbox]])
