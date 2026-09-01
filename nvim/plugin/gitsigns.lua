@@ -20,8 +20,4 @@ require("gitsigns").setup({
 
 local theme_white = vim.api.nvim_get_hl(0, { name = "Normal" }).fg
 
-vim.api.nvim_set_hl(
-  0,
-  "GitSignsCurrentLineBlame",
-  { fg = theme_white, italic = true }
-)
+vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = theme_white, italic = true })
