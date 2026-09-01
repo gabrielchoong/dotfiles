@@ -1,6 +1,8 @@
 -- ==========================================================================================
--- FUNCTIONS
+-- KEYMAPS
 -- ==========================================================================================
+local map = vim.keymap.set
+local cmd = vim.cmd
 
 -- ==========================================================================================
 -- FUNCTIONS
@@ -8,17 +10,11 @@
 local function git_push_unset_branch()
   local branch = vim.fn.input("git push -u origin ")
   if branch ~= "" then
-    vim.cmd("vsplit | term git push -u origin " .. branch)
-    vim.cmd("stopinsert")
     cmd("vsplit | term git push -u origin " .. branch)
     cmd("stopinsert")
   end
 end
 
--- ==========================================================================================
--- KEYMAPS
--- ==========================================================================================
-local map = vim.keymap.set
 local function git_pull_rebase_branch()
   local branch = vim.fn.input("git pull --rebase ")
   if branch ~= "" then
