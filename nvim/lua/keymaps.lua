@@ -35,5 +35,4 @@ map({ "n" }, "<A-l>", "<C-w>l")
 -- ------------------------------------------------------------------------------------------
 -- GLOBAL ACTIONS
 -- ------------------------------------------------------------------------------------------
-map("n", "<C-k>", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 map("n", "<F1>", global_git_push, { noremap = true, desc = "Git push -u origin <branch>" })
