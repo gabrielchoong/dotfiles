@@ -11,24 +11,21 @@ local notify = require("notify")
 local function git_push_unset_branch()
   local branch = vim.fn.input("git push -u origin ")
   if branch ~= "" then
-    cmd("vsplit | term git push -u origin " .. branch)
-    cmd("stopinsert")
+    cmd("Git push -u origin " .. branch)
   end
 end
 
 local function git_pull_rebase_branch()
   local branch = vim.fn.input("git pull --rebase ")
   if branch ~= "" then
-    cmd("vsplit | term git pull --rebase " .. branch)
-    cmd("stopinsert")
+    cmd("Git pull --rebase " .. branch)
   end
 end
 
 local function git_rebase_interactive()
   local head = vim.fn.input("git rebase -i ")
   if head ~= "" then
-    cmd("vsplit | term git rebase -i " .. head)
-    cmd("stopinsert")
+    cmd("Git rebase -i " .. head)
   end
 end
 
