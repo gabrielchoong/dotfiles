@@ -1,6 +1,6 @@
 local servers = {
   -- Bash
-  "bashls",
+  "bash_win",
   -- Go
   "gopls",
   -- Markdown / TeX
@@ -11,8 +11,8 @@ local servers = {
   "ruff",
   "ty",
   -- TypeScript
-  "oxlint",
-  "tsc",
+  "oxlint_win",
+  "tsc_win",
 }
 
 for _, server in ipairs(servers) do
