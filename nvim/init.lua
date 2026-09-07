@@ -13,6 +13,7 @@ vim.o.cursorline = true
 vim.o.scrolloff = 10
 vim.o.list = true
 vim.o.confirm = true
+vim.o.shellcmdflag = "-c"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
