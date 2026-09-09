@@ -27,5 +27,6 @@ require("conform").setup({
     sh = { "shfmt" },
     bash = { "shfmt" },
     markdown = { "prettier" },
+    go = { "goimports", "gofmt" },
   },
 })
