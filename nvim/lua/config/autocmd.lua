@@ -42,3 +42,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
   end,
 })
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(event)
+    vim.keymap.set("n", "grd", vim.lsp.buf.definition, { buffer = event.buf, desc = "Go to definition" })
+  end,
+})
