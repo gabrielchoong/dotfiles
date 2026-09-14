@@ -14,6 +14,9 @@ vim.o.scrolloff = 10
 vim.o.list = true
 vim.o.confirm = true
 vim.o.shellcmdflag = "-c"
+vim.o.shellxquote = ""
+vim.o.shellredir = ">%s 2>&1"
+vim.o.shellpipe = "2>&1| tee"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
