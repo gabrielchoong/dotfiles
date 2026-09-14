@@ -45,6 +45,7 @@ vim.pack.add({
   "https://github.com/stevearc/quicker.nvim",
   "https://github.com/nvim-telescope/telescope.nvim",
   "https://github.com/folke/todo-comments.nvim",
+  "https://github.com/akinsho/toggleterm.nvim",
   "https://github.com/tpope/vim-fugitive",
   "https://github.com/folke/which-key.nvim",
 })
