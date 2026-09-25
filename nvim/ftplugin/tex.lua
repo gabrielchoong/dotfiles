@@ -1,4 +1,5 @@
-vim.keymap.set("n", "<F5>", function()
-  vim.cmd("vsplit | term pdflatex %")
-  vim.cmd("stopinsert")
-end, { buffer = true, desc = "Compile LaTeX to PDF" })
+vim.opt_local.expandtab = false
+vim.opt_local.tabstop = 8
+vim.opt_local.shiftwidth = 8
+vim.opt_local.softtabstop = 8
+vim.opt_local.textwidth = 120

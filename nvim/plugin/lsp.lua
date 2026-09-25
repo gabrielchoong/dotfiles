@@ -1,16 +1,25 @@
 local servers = {
-  -- Bash
-  "bashls",
-  -- Go
-  "gopls",
-  -- Markdown / TeX
-  "ltex",
   -- NeoVim config
   "lua_ls",
+
+  -- Shell Scripting
+  "bashls",
+
+  -- Network
+  "gopls",
+
+  -- Papers
+  "ltex",
+  "texlab",
+
   -- Python
   "ruff",
   "ty",
-  -- TypeScript
+
+  -- Rust
+  "rust_analyzer",
+
+  -- Web Dev
   "oxlint",
   "tsc",
 }

@@ -5,5 +5,11 @@ require("conform").setup({
   },
   formatters_by_ft = {
     lua = { "stylua" },
+    tex = { "tex-fmt" },
+  },
+  formatters = {
+    ["tex-fmt"] = {
+      cwd = require("conform.util").root_file({ "tex-fmt.toml", ".git" }),
+    },
   },
 })
