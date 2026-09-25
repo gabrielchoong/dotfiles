@@ -24,9 +24,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   desc = "Disable undofile for certain files",
 })
 
-  end,
-})
-
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(event)
     vim.keymap.set("n", "grd", vim.lsp.buf.definition, { buffer = event.buf, desc = "Go to definition" })
