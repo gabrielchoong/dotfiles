@@ -3,6 +3,6 @@ require("toggleterm").setup({
   close_on_exit = false,
 })
 
-vim.keymap.set("n", "<leader>tt", function()
+vim.keymap.set("n", "<leader>t", function()
   vim.cmd("ToggleTerm")
 end, { desc = "Toggle Floating Terminal" })
