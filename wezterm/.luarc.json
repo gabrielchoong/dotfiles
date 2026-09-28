@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "workspace": {
+    "library": ["./wezterm-types"],
+    "checkThirdParty": false
+  },
+    "diagnostics": {
+    "globals": ["wezterm"]
+  },
+  "runtime.version": "Lua 5.3",
+  "hint.enable": false
+}
