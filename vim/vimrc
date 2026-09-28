@@ -1,0 +1,16 @@
+set nocompatible
+
+syntax on
+filetype plugin indent on
+
+set autoindent
+set number
+set relativenumber
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set wildmenu
+set showmatch
+set backspace=indent,eol,start
