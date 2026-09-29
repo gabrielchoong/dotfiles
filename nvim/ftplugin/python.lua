@@ -1,5 +1,6 @@
-vim.keymap.set("n", "<F5>", function()
-  local args = vim.fn.input("CLI Args: ")
-  vim.cmd("vsplit | term python % " .. args)
-  vim.cmd("stopinsert")
-end, { buffer = true, desc = "Run Python script in NeoVim" })
+vim.opt_local.textwidth = 88
+vim.opt_local.colorcolumn = "+1"
+
+vim.opt_local.formatoptions:append("c")
+vim.opt_local.formatoptions:append("q")
+vim.opt_local.formatoptions:remove("t")
