@@ -1,5 +1,9 @@
 require("lualine").setup({
   options = {
     theme = "auto",
+    disabled_filetypes = {
+      statusline = { "alpha" },
+      winbar = { "alpha" },
+    },
   },
 })
