@@ -2,47 +2,25 @@
 -- KEYMAPS
 -- ==========================================================================================
 local map = vim.keymap.set
-local cmd = vim.cmd
-
--- ==========================================================================================
--- FUNCTIONS
--- ==========================================================================================
-local function git_push_unset_branch()
-  local branch = vim.fn.input("git push -u origin ")
-  if branch ~= "" then
-    cmd("Git push -u origin " .. branch)
-  end
-end
-
-local function git_pull_rebase_branch()
-  local branch = vim.fn.input("git pull --rebase ")
-  if branch ~= "" then
-    cmd("Git pull --rebase " .. branch)
-  end
-end
-
-local function git_rebase_interactive()
-  local head = vim.fn.input("git rebase -i ")
-  if head ~= "" then
-    cmd("Git rebase -i " .. head)
-  end
-end
-
-local function git_fugitive_gvdiffsplit()
-  cmd("Gvdiffsplit")
-end
-
--- ------------------------------------------------------------------------------------------
--- GIT ACTIONS
--- ------------------------------------------------------------------------------------------
-map("n", "<F1>", git_push_unset_branch, { noremap = true, desc = "git push -u origin <branch>" })
-map("n", "<F2>", git_pull_rebase_branch, { noremap = true, desc = "git pull --rebase" })
-map("n", "<F3>", git_rebase_interactive, { noremap = true, desc = "git rebase -i <head~n>" })
-map("n", "<F4>", git_fugitive_gvdiffsplit, { noremap = true, desc = "git resolve merge conflicts" })
 
 -- ------------------------------------------------------------------------------------------
 -- PLACEHOLDER ACTIONS
 -- ------------------------------------------------------------------------------------------
+map("n", "<F1>", function()
+  vim.notify("<F1> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "Unmapped keybind" })
+
+map("n", "<F2>", function()
+  vim.notify("<F2> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "Unmapped keybind" })
+
+map("n", "<F3>", function()
+  vim.notify("<F3> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "Unmapped keybind" })
+
+map("n", "<F4>", function()
+  vim.notify("<F4> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+end, { noremap = true, desc = "Unmapped keybind" })
 map("n", "<F5>", function()
   vim.notify("<F5> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
 end, { noremap = true, desc = "Unmapped keybind" })
