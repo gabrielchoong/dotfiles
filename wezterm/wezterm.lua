@@ -7,7 +7,8 @@ config.color_scheme = "GruvboxDark"
 config.colors = {}
 
 config.font = wezterm.font_with_fallback({
-  "JetBrainsMono Nerd Font",
+  { family = "JetBrainsMono Nerd Font", scale = 1.0 },
+  { family = "Zhi Mang Xing", scale = 1.5 },
 })
 
 config.font_size = 16
