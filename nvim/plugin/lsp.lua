@@ -38,3 +38,5 @@ vim.lsp.config("*", {
   },
   root_markers = { ".git" },
 })
+
+vim.keymap.set("n", "grd", vim.lsp.buf.definition, { desc = "vim.lsp.buf.definition()" })
