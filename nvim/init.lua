@@ -1,29 +1,6 @@
 vim.loader.enable()
 
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-vim.g.loaded_python3_provider = 0
-vim.g.loaded_ruby_provider = 0
-vim.g.tex_flavor = "latex"
-
 vim.g.mapleader = " "
-
-vim.o.ignorecase = true
-vim.o.smartcase = true
-vim.o.cursorline = true
-vim.o.scrolloff = 10
-vim.o.list = true
-vim.o.confirm = true
-
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.autocomplete = true
-vim.opt.undofile = true
-vim.opt.pumborder = "rounded"
-vim.opt.pummaxwidth = 40
-vim.opt.completeopt = { "menuone", "noselect", "popup" }
-vim.opt.termguicolors = true
-vim.opt.mouse = ""
 
 vim.cmd("packadd! nohlsearch")
 
