@@ -3,7 +3,6 @@
 -- ==========================================================================================
 local map = vim.keymap.set
 local cmd = vim.cmd
-local notify = require("notify")
 
 -- ==========================================================================================
 -- FUNCTIONS
@@ -45,19 +44,19 @@ map("n", "<F4>", git_fugitive_gvdiffsplit, { noremap = true, desc = "git resolve
 -- PLACEHOLDER ACTIONS
 -- ------------------------------------------------------------------------------------------
 map("n", "<F5>", function()
-  notify("<F5> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+  vim.notify("<F5> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
 end, { noremap = true, desc = "Unmapped keybind" })
 
 map("n", "<F6>", function()
-  notify("<F6> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+  vim.notify("<F6> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
 end, { noremap = true, desc = "Unmapped keybind" })
 
 map("n", "<F7>", function()
-  notify("<F7> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+  vim.notify("<F7> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
 end, { noremap = true, desc = "Unmapped keybind" })
 
 map("n", "<F8>", function()
-  notify("<F8> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
+  vim.notify("<F8> is not mapped for this buffer.", vim.log.levels.INFO, { title = "Keybind" })
 end, { noremap = true, desc = "Unmapped keybind" })
 
 -- ------------------------------------------------------------------------------------------
