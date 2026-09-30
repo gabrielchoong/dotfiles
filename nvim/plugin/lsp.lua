@@ -11,6 +11,7 @@ local servers = {
   -- Papers
   "ltex",
   "texlab",
+  "markdown_oxide",
 
   -- Python
   "ruff",

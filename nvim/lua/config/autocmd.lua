@@ -30,7 +30,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local client = vim.lsp.get_client_by_id(args.data.client_id)
 
     if client and client:supports_method("textDocument/completion") then
-      vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
+      local autotrigger = vim.bo[args.buf].filetype ~= "markdown"
+      vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = autotrigger })
     end
 
     if client and client:supports_method("textDocument/inlayHint") then
