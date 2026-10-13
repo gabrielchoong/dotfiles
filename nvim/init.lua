@@ -8,6 +8,7 @@ vim.cmd("packadd! nohlsearch")
 
 vim.pack.add({
   "https://github.com/goolord/alpha-nvim",
+  "https://github.com/itchyny/calendar.vim",
   "https://github.com/stevearc/conform.nvim",
   "https://github.com/rafamadriz/friendly-snippets",
   "https://github.com/lewis6991/gitsigns.nvim",
