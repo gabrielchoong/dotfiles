@@ -16,10 +16,25 @@ wezterm.on("gui-startup", function(cmd)
 end)
 
 local config = wezterm.config_builder()
+local color_scheme = "GruvboxDark"
 
-config.color_scheme = "GruvboxDark"
+config.color_scheme = color_scheme
+local colors = wezterm.color.get_builtin_schemes()[color_scheme]
 
-config.colors = {}
+config.colors = {
+  tab_bar = {
+    active_tab = {
+      bg_color = colors.ansi[8],
+      fg_color = colors.background,
+      intensity = "Bold",
+    },
+    inactive_tab = {
+      bg_color = colors.background,
+      fg_color = colors.foreground,
+    },
+    background = colors.background,
+  },
+}
 
 config.font = wezterm.font_with_fallback({
   { family = "JetBrainsMono Nerd Font", scale = 1.0 },
@@ -29,8 +44,16 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 16
 config.command_palette_font_size = 18
 
-config.enable_tab_bar = false
+config.enable_tab_bar = true
+config.use_fancy_tab_bar = false
+config.hide_tab_bar_if_only_one_tab = true
+config.tab_bar_at_bottom = true
 config.window_decorations = "RESIZE"
+
+config.window_padding = {
+  top = 0,
+  bottom = 0,
+}
 
 config.launch_menu = {
   {
