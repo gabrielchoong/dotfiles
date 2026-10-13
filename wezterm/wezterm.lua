@@ -1,4 +1,19 @@
 local wezterm = require("wezterm") ---@type Wezterm
+local mux = wezterm.mux
+
+wezterm.on("gui-startup", function(cmd)
+  local tab, pane, window = mux.spawn_window({
+    workspace = "Master",
+    cwd = wezterm.home_dir .. "/dev",
+    args = { "zsh", "-l" },
+  })
+  window:spawn_tab({
+    args = { "zsh", "-l", "-c", "concord" },
+  })
+  window:spawn_tab({
+    args = { "zsh", "-l", "-c", "agy" },
+  })
+end)
 
 local config = wezterm.config_builder()
 
