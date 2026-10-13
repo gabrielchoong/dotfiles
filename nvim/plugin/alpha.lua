@@ -23,9 +23,9 @@ dashboard.section.header.val = {
 
 dashboard.section.buttons.val = {
   dashboard.button("e", "New file", ":ene <BAR> startinsert <CR>"),
-  dashboard.button("r", "Research", ":Telescope live_grep cwd=$HOME/papers<CR>"),
+  dashboard.button("r", "Research", ":Telescope find_files cwd=$HOME/papers<CR>"),
   dashboard.button("o", "Recent", ":Telescope oldfiles<CR>"),
-  dashboard.button("n", "Notes", ":Telescope live_grep cwd=$HOME/notes/general<CR>"),
+  dashboard.button("n", "Notes", ":Telescope find_files cwd=$HOME/notes/general<CR>"),
   dashboard.button("t", "Tasks", ":TodoTelescope cwd=$HOME/Notes keywords=TODO,FIXME<CR>"),
 }
 
