@@ -22,6 +22,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.autocomplete = true
 vim.opt.undofile = true
+vim.opt.swapfile = false
 vim.opt.pumborder = "rounded"
 vim.opt.pummaxwidth = 40
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
