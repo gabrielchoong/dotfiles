@@ -19,7 +19,6 @@ vim.pack.add({
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/rcarriga/nvim-notify",
   "https://github.com/nvim-treesitter/nvim-treesitter",
-  "https://github.com/nvim-tree/nvim-web-devicons",
   "https://github.com/stevearc/oil.nvim",
   "https://github.com/nvim-lua/plenary.nvim",
   "https://github.com/stevearc/quicker.nvim",
