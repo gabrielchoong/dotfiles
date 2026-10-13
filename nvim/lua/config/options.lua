@@ -15,6 +15,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
+vim.opt.showtabline = 0
 vim.opt.list = true
 vim.opt.confirm = true
 vim.opt.number = true
