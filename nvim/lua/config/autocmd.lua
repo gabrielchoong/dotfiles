@@ -43,3 +43,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
   end,
 })
+
+vim.api.nvim_create_autocmd("VimResized", {
+  callback = function()
+    if vim.bo.filetype == "alpha" then
+      require("alpha").redraw()
+    end
+  end,
+})
