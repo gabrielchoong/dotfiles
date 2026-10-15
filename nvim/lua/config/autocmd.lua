@@ -12,6 +12,7 @@ vim.api.nvim_create_autocmd("UIEnter", {
 })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
+  desc = "Disable undofile for certain files",
   pattern = {
     "/tmp/*",
     "*.secret",
@@ -21,7 +22,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
     vim.opt_local.undofile = false
   end,
-  desc = "Disable undofile for certain files",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
