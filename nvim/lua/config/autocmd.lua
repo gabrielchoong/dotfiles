@@ -6,6 +6,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.api.nvim_create_autocmd("UIEnter", {
+  desc = "Yank to system clipboard with the + register",
   callback = function()
     vim.o.clipboard = "unnamedplus"
   end,
@@ -25,6 +26,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
+  desc = "Enable inlay hints and codelens",
   callback = function(args)
     local bufnr = args.buf
     local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -40,6 +42,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
+  desc = "Enable completion autotrigger except for markdowa",
   callback = function(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
 
@@ -51,6 +54,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.api.nvim_create_autocmd("VimResized", {
+  desc = "Redraw dashboard window when resizing terminal",
   callback = function()
     if vim.bo.filetype == "alpha" then
       require("alpha").redraw()
