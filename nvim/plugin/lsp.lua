@@ -2,7 +2,7 @@ local servers = {
   "bashls",
   "gopls",
   "harper",
-  "lua_ls",
+  "lua",
   "markdown_oxide",
   "oxlint",
   "ruff",
