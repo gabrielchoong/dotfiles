@@ -13,7 +13,6 @@ vim.pack.add({
   "https://github.com/rafamadriz/friendly-snippets",
   "https://github.com/lewis6991/gitsigns.nvim",
   "https://github.com/ellisonleao/gruvbox.nvim",
-  "https://github.com/barreiroleo/ltex_extra.nvim",
   "https://github.com/nvim-lualine/lualine.nvim",
   "https://github.com/nvim-mini/mini.icons",
   "https://github.com/nvim-mini/mini.snippets",

@@ -9,7 +9,7 @@ local servers = {
   "gopls",
 
   -- Papers
-  "ltex",
+  "harper",
   "texlab",
   "markdown_oxide",
 
