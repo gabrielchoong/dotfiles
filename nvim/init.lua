@@ -30,8 +30,8 @@ vim.pack.add({
   "https://github.com/folke/which-key.nvim",
 })
 
+require("autocmd")
 require("keymaps")
 require("config.options")
-require("config.autocmd")
 
 vim.cmd([[colorscheme gruvbox]])
