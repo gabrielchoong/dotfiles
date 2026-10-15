@@ -1,28 +1,15 @@
 local servers = {
-  -- NeoVim config
-  "lua_ls",
-
-  -- Shell Scripting
   "bashls",
-
-  -- Network
   "gopls",
-
-  -- Papers
   "harper",
-  "texlab",
+  "lua_ls",
   "markdown_oxide",
-
-  -- Python
-  "ruff",
-  "ty",
-
-  -- Rust
-  "rust_analyzer",
-
-  -- Web Dev
   "oxlint",
+  "ruff",
+  "rust_analyzer",
+  "texlab",
   "tsc",
+  "ty",
 }
 
 for _, server in ipairs(servers) do
